@@ -1,0 +1,18 @@
+﻿@model RealEstate.EntityLayer.Concrete.Category
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Kategori ID</label>
+    @Html.TextBoxFor(x => x.CategoryID, new { @class = "form-control" })
+    <br />
+    <label>Kategori Adı</label>
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <br />
+    <label>Kategori Açıklaması</label>
+    @Html.TextBoxFor(x => x.CategoryDetails, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Kategoriyi Güncelle</button>
+</form>
