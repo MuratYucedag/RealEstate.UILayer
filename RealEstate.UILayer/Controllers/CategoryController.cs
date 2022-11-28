@@ -22,7 +22,7 @@ namespace RealEstate.UILayer.Controllers
             var values = _categoryService.TGetList();
             return View(values);
         }
-
+           //açıkalama
         [HttpGet]
         public ActionResult AddCategory()
         {
